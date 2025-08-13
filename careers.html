@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers — Sultan Sardar</title>
+  <meta name="description" content="Join our team of licensed guards, technicians, and cybersecurity analysts.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><img class="brand-logo" src="logo.svg" alt="Logo"></a>
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html" class="btn">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h1>Careers</h1>
+    <p>Join a growing security company delivering end-to-end physical and cyber protection across the UAE.</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Security Guard (On-site)</h3>
+        <ul>
+          <li>Licensed, uniformed, and disciplined</li>
+          <li>Day/Night shifts available</li>
+          <li>Client-facing communication skills</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>CCTV / Access Control Technician</h3>
+        <ul>
+          <li>Installation & maintenance of CCTV and access systems</li>
+          <li>NVR/DVR configuration, cabling, and troubleshooting</li>
+          <li>Valid UAE driving license preferred</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Cybersecurity Analyst (SOC)</h3>
+        <ul>
+          <li>SIEM monitoring & alert triage</li>
+          <li>Incident response & reporting</li>
+          <li>Knowledge of EDR, vulnerability mgmt.</li>
+        </ul>
+      </div>
+    </div>
+    <h3>Apply Now</h3>
+    <p>Send your CV to <strong><span id="careersEmail">info@yourdomain.com</span></strong> or WhatsApp us at <strong><span id="careersWA">+971-542710368</span></strong>.</p>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><p>&copy; <span id="year"></span> Sultan Sardar Managed Security Services Provider</p></div></footer>
+<script>
+  // Populate from config if exists
+  fetch('config.json').then(r=>r.json()).then(cfg=>{
+    document.getElementById('careersEmail').textContent = cfg.email;
+    document.getElementById('careersWA').textContent = cfg.whatsapp;
+    document.getElementById('year').textContent = new Date().getFullYear();
+  }).catch(()=>{
+    document.getElementById('year').textContent = new Date().getFullYear();
+  });
+</script>
+</body>
+</html>

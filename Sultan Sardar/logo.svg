@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="64" viewBox="0 0 520 128">
+  <rect x="0" y="0" width="128" height="128" rx="18" fill="#1f3b66"/>
+  <g transform="translate(32,18)">
+    <path d="M64 32v-10a20 20 0 10-40 0v10a16 16 0 00-12 16v30a16 16 0 0016 16h32a16 16 0 0016-16V48a16 16 0 00-12-16zm-30-10a14 14 0 1128 0v10H34V22z" fill="#fff"/>
+  </g>
+  <text x="148" y="48" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700" fill="#1f3b66">SULTAN SARDAR</text>
+  <text x="148" y="80" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#2e2e2e">Managed Security Services Provider</text>
+</svg>
